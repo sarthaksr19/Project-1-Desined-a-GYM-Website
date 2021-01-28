@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(fitness2.jpg);
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .left {
+            position: absolute;
+            left: 25px;
+            top: 15px;
+            display: inline-block;
+            /* border: 2px solid red; */
+
+        }
+
+        .mid {
+            display: block;
+            width: 36%;
+            margin: 36px auto;
+            padding: 13px 0px;
+            /* border: 2px solid green; */
+
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            /* border: 2px solid yellow; */
+            right: 30px;
+            top: 45px;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 165px
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: black;
+            color: whitesmoke;
+            padding: 3px 5px;
+            margin: 4px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: wheat;
+        }
+
+        .container {
+            /* border: 2px solid #e0d9d6; */
+            margin: 60px 32px;
+            padding: 20px 23px;
+            width: 34%;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 250px;
+            padding: 4px;
+            margin: 7px auto;
+            border-radius: 7px;
+            border: 2px solid black;
+            font-size: 20px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container button {
+            display: inline-block;
+            margin: 35px auto;
+            width: 150px;
+            padding: 12px 6px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Spartan Gym.jpeg" alt="">
+
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- rightbox for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button><button class="btn">Join us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>For Gyms | Yoga | Cardio</h1>
+        <form action="nobackend.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Loacality">
+            </div>
+            <div class="formgroup">
+                <input type="number" name="" placeholder="Contact No.">
+            </div>
+            <button class="btn">Request a demo</button><button class="btn">Join us</button>
+        </form>
+    </div>
+</body>
+
+</html>
